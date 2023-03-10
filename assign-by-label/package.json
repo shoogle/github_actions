@@ -1,0 +1,23 @@
+{
+  "name": "assign-by-label",
+  "version": "1.0.0",
+  "description": "Assign or unassign people when labels are added or removed",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Casper Jeukendrup",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@vercel/ncc": "^0.36.1"
+  }
+}
