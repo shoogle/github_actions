@@ -1,0 +1,24 @@
+# .gitattributes - Tell Git how to handle different file formats in the repo.
+
+# Unrecognized formats: let Git decide whether the file is text or binary.
+*               text=auto
+
+# Text files: checkout system line endings (follow `git config core.eol`).
+*.txt           text
+*.md            text
+*.js            text
+*.ts            text
+*.yml           text
+*.json          text
+
+# Shell scripts: checkout with LF line endings (Unix-style).
+*.sh            text            eol=lf
+*.ps1           text            eol=lf
+
+# Batch files: checkout with CRLF line endings (Windows-style).
+*.bat           text            eol=crlf
+*.cmd           text            eol=crlf
+
+# Binary files: preserve line endings (avoid corrupting the file).
+*.png           binary
+*.jpg           binary
